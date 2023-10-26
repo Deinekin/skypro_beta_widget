@@ -15,3 +15,13 @@ def get_card_type_and_mask(card: str) -> str:
         return " ".join(card_info_list)
 
 
+def get_date(date: str) -> str:
+    """
+    Возвращает дату в формате dd.mm.yy
+    :param date: строка, например "2018-07-11T02:26:18.671407"
+    :return: дата, например "11.07.2018"
+    """
+    date_list = date.split("-")
+    return f"{date_list[2][:2]}.{date_list[1]}.{date_list[0]}"
+
+
