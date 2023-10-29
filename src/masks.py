@@ -26,7 +26,7 @@ def get_bank_account(bank_acc: str) -> str:
     if not bank_acc.isdigit():
         return "Неверно указан счет"
 
-    return f"****{bank_acc[-2:]}"
+    return f"**{bank_acc[-4:]}"
 
 
 def count_files_and_folders(path=os.getcwd(), is_recursive=False):
